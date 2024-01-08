@@ -1,0 +1,57 @@
+body {
+	background-color: #58232C;
+	color: #FFFFFF;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+nav {
+	text-align: center;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-weight: bold;
+}
+
+a:link {
+	color: #41A494
+}
+
+a:visited {
+	color: #415fa4
+}
+
+hr {
+	color: #C56D7C
+}
+
+footer {
+	text-align:center
+}
+
+.flex {
+	display:flex;
+	text-align:center;
+	justify-content:center;
+	gap:20px;
+}
+
+.mainbox {
+	margin: auto;
+	justify-content: center;
+	max-width: 1100px;
+	flex-direction: row;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.maintext {
+	margin: auto;
+	justify-content: center;
+	max-width: 1100px;
+	flex-direction: row;
+	text-align: left;
+	margin-bottom: 5px;
+}
