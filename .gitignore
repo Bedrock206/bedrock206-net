@@ -1,9 +1,0 @@
-# Dependencies
-/node_modules
-
-# Intellij
-/.idea
-
-# Visual Studio Code
-/.vscode
-.history
