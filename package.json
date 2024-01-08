@@ -7,7 +7,10 @@
     "build": "npx eleventy --pathprefix bedrock206-net",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy",
-    "test": "jest"
+    "test": "jest",
+    "build:sass:prod": "sass src/static/scss:public/static/css --style compressed",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod"
   },
   "author": "",
   "license": "ISC",
