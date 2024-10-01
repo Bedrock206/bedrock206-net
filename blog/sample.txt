@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../../bundle.css" />
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+	<h1>Bedrock206's corner of the internet</h1>
+	<nav>
+		<a href="../../">Home</a> | <a href="../../collections">Collections</a> | <a href="../../blog">Blog</a> | <a href="../../about/">About</a>
+	</nav>
+	<hr>
+</head>
+<body>
+	<div class="mainbox">
+		<h2 style="text-align: center;">Title Here</h2>
+		<p>Text here!</p>
+	</div>
+</body>
+<hr>
+<footer>
+	This site is <a href="http://jeffhuang.com/designed_to_last/">designed to last</a>.
+</footer>
+</html>
