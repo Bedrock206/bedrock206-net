@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/bundle.css" />
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+	<link rel="stylesheet" href="../../bundle.css" />
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
 	<h1>Bedrock206's corner of the internet</h1>
 	<nav>
-		<a href="/index.html">Home</a> | <a href="/collections/index.html">Collections</a> | <a href="/blog/index.html">Blog</a> | <a href="/about/index.html">About</a>
+		<a href="../../">Home</a> | <a href="../../collections">Collections</a> | <a href="../../blog">Blog</a> | <a href="../../about/">About</a>
 	</nav>
 	<hr>
 </head>
 <body>
-	<div class="maintext">
+	<div class="mainbox">
     <h2>On The Eleventy Migration - Finale</h2>
 <p>Triumph! It took a lot out of me but I managed to get the site working with Eleventy. I'd like to detail my working process here in case anyone wants an alternative way to how most internet guides reccommend doing this.</p>
 <p>Most guides reccommend a process in which your main Github repo contains your entire node project, and you use Github Actions to deploy your site to a new branch that populates the Pages site. I found this annoying, as you need to work with a bunch of weird stuff like encryption keys. From the beginning I was thinking the best way would be to have your repo cloned into the project folder and then confiure Eleventy to build the site to the repo folder, and that's what worked for me.</p>
