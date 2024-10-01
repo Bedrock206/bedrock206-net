@@ -1,12 +1,12 @@
 body {
 	background-image: linear-gradient(
-    #461220,
-    #69140e,
-    #7d1128,
-    #a64253
-  );
-  background-size: cover;
-  background-attachment: fixed;
+		#461220,
+		#69140e,
+		#7d1128,
+		#a64253
+	);
+	background-size: cover;
+	background-attachment: fixed;
 	color: #FFFFFF;
 	font-family:Consolas,Hack,"Liberation Mono",monospace;
 }
@@ -23,15 +23,15 @@ nav {
 }
 
 a:link {
-	color: #41A494
+	color: #f2b3d3
 }
 
 a:visited {
-	color: #415fa4
+	color: #d56aa0
 }
 
 hr {
-	color: #C56D7C
+	color: #d9cab3;
 }
 
 footer {
@@ -52,13 +52,9 @@ footer {
 	flex-direction: row;
 	text-align: center;
 	margin-bottom: 5px;
+	   backdrop-filter: blur(10px);
 }
 
-.maintext {
-	margin: auto;
-	justify-content: center;
-	max-width: 1100px;
-	flex-direction: row;
+.mainbox p {
 	text-align: left;
-	margin-bottom: 5px;
 }
