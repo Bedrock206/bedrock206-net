@@ -32,6 +32,7 @@ a:visited {
 
 hr {
 	color: #d9cab3;
+	max-width: 550px;
 }
 
 footer {
@@ -57,4 +58,14 @@ footer {
 
 .mainbox p {
 	text-align: left;
+}
+
+blockquote {
+	border-left: 3px solid #d56aa0;
+	background: #f2b3d3;
+	margin: 1.5em 10px;
+    padding: 0.5em 10px
+}
+
+blockquote p {
 }
