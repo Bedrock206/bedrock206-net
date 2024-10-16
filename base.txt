@@ -1,11 +1,9 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> VERIFY LINK INTEGRITY
 	<link rel="stylesheet" type="text/css" href="bundle.css" />
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-	<title>Home - Bedrock206.net</title>
+	<title>PAGENAME - Bedrock206.net</title>
 </head>
 <body>
 	<div id="container">
@@ -15,25 +13,16 @@
 		<div id="flex">
 			<main>
 				<div class="wrapper">
-					<div class="title">Welcome!</div>
+					<div class="title">TITLE ONE</div>
 					<div class="content">
-						<p>Hi, I'm Bedrock206.</p>
-						<p>I'm an environmental science student, and I hope to help change the world for the better.</p>
-					</div>
-					<div class="title">Updates!</div>
-					<div class="content">
-						<p>This site was last updated {{ site.time | date: "%-d %B %Y" }} UTC.</p>
-						<ul>
-							<li>20241015 - Huge CSS layout update. Very obviously inspired by <a href="https://sadgrl.online/" target="_blank">Sadness's site</a> (archived) but as I learn more div magic expect changes. Just wanted to get this out there so it looks like I'm doing something.</li>
-						</ul>
-					</div>
-					
+						CONTENT ONE
+					</div>					
 				</div>
 			</main>
 			<aside>
 				<div class="navtitle">Navigation</div>
 				<nav>
-					<ul>
+					<ul> VERIFY LINK INTEGRITY
 						<li><a href="">Home</a></li>
 						<li><a href="collections">Collections</a></li>
 						<li><a href="blog">Blog</a></li>

@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="../../bundle.css" />
+	<link rel="stylesheet" type="text/css" href="../../bundle.css" />
 	<link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
-	<h1>Bedrock206's corner of the internet</h1>
-	<nav>
-		<a href="../../">Home</a> | <a href="../../collections">Collections</a> | <a href="../../blog">Blog</a> | <a href="../../about/">About</a>
-	</nav>
-	<hr>
+	<title>On The Eleventy Migration - Finale - Bedrock206.net</title>
 </head>
 <body>
-	<div class="mainbox">
-    <h2>On The Eleventy Migration - Finale</h2>
-<p>Triumph! It took a lot out of me but I managed to get the site working with Eleventy. I'd like to detail my working process here in case anyone wants an alternative way to how most internet guides reccommend doing this.</p>
-<p>Most guides reccommend a process in which your main Github repo contains your entire node project, and you use Github Actions to deploy your site to a new branch that populates the Pages site. I found this annoying, as you need to work with a bunch of weird stuff like encryption keys. From the beginning I was thinking the best way would be to have your repo cloned into the project folder and then confiure Eleventy to build the site to the repo folder, and that's what worked for me.</p>
-<p>To start, create a blank Github repo and name it whatever. As far as I know, your Github Pages repos don't need to be named <code>[Username].github.io</code> anymore. I like using the Github desktop app, because it's nice to see what I'm doing as I'm not that good with git. Clone this repo to your main eleventy project folder. Then edit your <code>.eleventy.js</code> file to include the following:</p>
-<pre><code>module.exports = function(eleventyConfig) {
-    return {
-        dir: {
-          output: &quot;YOUR-REPO-NAME-HERE&quot;
-        }
-      }
-};
-</code></pre>
-<p>of couse replacing the capitals with your repo name. Now all you need do to update your site is rebuild your static site (If you followed the tutorials in the documentation you should run <code>npm run build</code>), and then push and commit.</p>
-
+	<div id="container">
+		<div class="pagetitle">
+			<h1>Bedrock206's corner of the internet</h1>
+		</div>
+		<div id="flex">
+			<main>
+				<div class="wrapper">
+					<div class="title">On The Eleventy Migration - Finale</div>
+					<div class="content">
+						<p>Triumph! It took a lot out of me but I managed to get the site working with Eleventy. I'd like to detail my working process here in case anyone wants an alternative way to how most internet guides reccommend doing this.</p>
+						<p>Most guides reccommend a process in which your main Github repo contains your entire node project, and you use Github Actions to deploy your site to a new branch that populates the Pages site. I found this annoying, as you need to work with a bunch of weird stuff like encryption keys. From the beginning I was thinking the best way would be to have your repo cloned into the project folder and then confiure Eleventy to build the site to the repo folder, and that's what worked for me.</p>
+						<p>To start, create a blank Github repo and name it whatever. As far as I know, your Github Pages repos don't need to be named <code>[Username].github.io</code> anymore. I like using the Github desktop app, because it's nice to see what I'm doing as I'm not that good with git. Clone this repo to your main eleventy project folder. Then edit your <code>.eleventy.js</code> file to include the following:</p>
+						<pre><code>module.exports = function(eleventyConfig) {
+	return {
+		dir: {
+			output: &quot;YOUR-REPO-NAME-HERE&quot;
+		}
+	}
+};</code></pre>
+						<p>of couse replacing the capitals with your repo name. Now all you need do to update your site is rebuild your static site (If you followed the tutorials in the documentation you should run <code>npm run build</code>), and then push and commit.</p>
+					</div>					
+				</div>
+			</main>
+			<aside>
+				<div class="navtitle">Navigation</div>
+				<nav>
+					<ul>
+						<li><a href="../../">Home</a></li>
+						<li><a href="../../collections">Collections</a></li>
+						<li><a href="../../blog">Blog</a></li>
+						<li><a href="../../about">About</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
 	</div>
 </body>
-<hr>
 <footer>
 	This site is <a href="http://jeffhuang.com/designed_to_last/">designed to last</a>.
 </footer>
