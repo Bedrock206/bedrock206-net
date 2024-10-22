@@ -48,6 +48,7 @@ footer {
 .pagetitle {
 	height: 150px;
 	border: 3px solid white;
+	border-style: double;
 	margin-bottom: 5px;
 }
 
@@ -64,11 +65,17 @@ aside {
 	width: 30%;
 	margin-left: 5px;
 	border: 3px solid white;
+	border-style: double;
+}
+
+iframe {
+    border: none;
 }
 
 .title {
 	font-size: 20px;
 	border: 3px solid white;
+	border-style: double;
 	margin-top: 5px;
 	padding: 5px;
 	padding-left:25px;
@@ -81,13 +88,15 @@ aside {
 .navtitle {
 	font-size: 20px;
 	border-bottom: 3px solid white;
+	border-style: double;
 	padding: 5px;
 	padding-left:25px;
-
 }
 
 .content {
 	border: 3px solid white;
+	border-radius: 3px;
+	border-style: double;
 	padding: 25px;
 }
 
@@ -124,6 +133,11 @@ nav {
 
 nav ul {
 	list-style-type=
+}
+
+aside ul {
+	position: sticky;
+	bottom: 10px;
 }
 
 img {
