@@ -131,7 +131,8 @@ nav {
 }
 
 nav ul {
-	list-style-type=
+	list-style-position: inside;
+	padding-inline-start: 20px;
 }
 
 aside ul {
