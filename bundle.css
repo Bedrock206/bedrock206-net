@@ -18,8 +18,7 @@ h1 {
 }
 
 hr {
-	color: #d9cab3;
-	max-width: 550px;
+	color: #FFFFFF;
 }
 
 footer {
@@ -142,4 +141,21 @@ aside ul {
 
 img {
 	max-width: 100%;
+}
+
+.gallery {
+	display:flex;
+	justify-content:space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	justify-content: center
+}
+
+.galleryspacer {
+	width:100%;
+}
+
+.galleryitem {
+	width:30%;
 }
