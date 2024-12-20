@@ -168,7 +168,6 @@ a:visited {
 
 nav {
 	font-family:ToshibaSat;
-	font-weight: bold;
 	position: sticky;
 }
 
@@ -234,4 +233,18 @@ h4 {
 
 .galleryspacer > h4 {
 	margin-top: 16px;
+}
+
+.post {
+	display: none;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border2.png) 33% repeat;
+	margin:0;
+	padding:0;
+}
+.post:target {
+	display:block;
 }
