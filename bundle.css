@@ -8,76 +8,109 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #FFFFFF;
-    font-family:Consolas,Hack,"Liberation Mono",monospace;
+    font-family:ToshibaSat;
+	font-size:16px;
 }
 
+@font-face{
+	font-family: ToshibaSat;
+	src: url(assets/fonts/PxPlus_ToshibaSat_8x16.ttf);
+}
 
-h1 {
-	text-align: center;
-	font-family:Consolas,Hack,"Liberation Mono",monospace;
+@font-face{
+	/* Sorry for the less-than-helpful font name, I grabbed this from the default REXPaint fonts and turned it into a ttf myself */
+	font-family: SquareAssBitch;
+	src: url(assets/fonts/myfont.ttf);
+}
+
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+div { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+pre {
+	text-align:center;
+	font-family:ToshibaSat;
+	white-space: break-spaces;
+	padding:0;
+	margin:0;
+	line-height:16px;
 }
 
 hr {
-	color: #FFFFFF;
+	border: none;
+	margin: 0;
+	background-image: url(assets/icons/hr.png);
+	height: 16px;
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 footer {
 	text-align:center
 }
 
-.mainbox {
-	margin: auto;
-	justify-content: center;
-	max-width: 550px;
-	flex-direction: row;
-	text-align: center;
-	margin-bottom: 5px;
-	   backdrop-filter: blur(10px);
-}
-
-.mainbox p {
-	text-align: left;
-}
-
 #container {
-	max-width: 850px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
 .pagetitle {
-	height: 150px;
-	border: 3px solid white;
-	border-style: double;
-	margin-bottom: 5px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border3.png) 33% repeat;
+	margin-bottom:16px;
 }
 
 #flex {
 	display:flex;
-	max-width: 850px;
+	max-width: 800px;
 }
 
 main {
-	width: 74%;
+	width: 560px;
 }
 
 aside {
-	width: 30%;
-	margin-left: 5px;
-	border: 3px solid white;
-	border-style: double;
-}
-
-iframe {
-    border: none;
+	width: 240px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border1.png) 33% repeat;
 }
 
 .title {
-	font-size: 20px;
-	border: 3px solid white;
-	border-style: double;
-	margin-top: 5px;
-	padding: 5px;
-	padding-left:25px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border2.png) 33% repeat;
+	margin:0;
+	padding:0;
+	max-height:48px;
 }
 
 .title:first-child {
@@ -93,9 +126,18 @@ iframe {
 }
 
 .content {
-	border: 3px solid white;
-	border-style: double;
-	padding: 25px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border1.png) 33% repeat;
+}
+
+.standalone {
+	border-left: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border1.png) 33% repeat;
 }
 
 blockquote {
@@ -106,12 +148,14 @@ blockquote {
 
 code {
 	background: rgba(59, 23, 29, 0.5);
+	font-family: ToshibaSat;
 }
 
 code.block {
 	border-left: 3px solid #d56aa0;
 	margin: 1.5em 10px;
-    padding: 0.5em 10px
+    padding: 0.5em 10px;
+	background-color: rgba(59, 23, 29, 0.5);
 }
 
 a:link {
@@ -123,20 +167,15 @@ a:visited {
 }
 
 nav {
-	font-family:Consolas,Hack,"Liberation Mono",monospace;
+	font-family:ToshibaSat;
 	font-weight: bold;
 	position: sticky;
-	top: 10px;
 }
 
-nav ul {
+ul {
 	list-style-position: inside;
-	padding-inline-start: 20px;
-}
-
-aside ul {
-	position: sticky;
-	bottom: 10px;
+	padding-inline-start: 0;
+	margin: 0;
 }
 
 img {
@@ -145,17 +184,54 @@ img {
 
 .gallery {
 	display:flex;
-	justify-content:space-between;
-	gap: 16px;
 	flex-wrap: wrap;
 	flex-shrink: 1;
-	justify-content: center
+	justify-content: start;
 }
 
 .galleryspacer {
 	width:100%;
+	margin:0;
 }
 
 .galleryitem {
-	width:30%;
+	width:33.3%;
+	margin:0;
+}
+
+p {
+	margin:0;
+	padding:0;
+	line-height:16px;
+}
+
+p + p {
+	margin-top:16px;
+}
+
+ul > li {
+	margin:0;
+	background-image: url(assets/icons/arrow1.png);
+	list-style-type: none;
+	padding-left: 16px;
+	background-position: 0 0;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+h3 {
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 16px;
+	padding: 0;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.galleryspacer > h4 {
+	margin-top: 16px;
 }
