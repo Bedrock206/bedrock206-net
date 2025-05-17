@@ -56,6 +56,7 @@ hr {
 	border: none;
 	margin: 0;
 	background-image: url(assets/icons/hr.png);
+	/*width: calc(round(down, calc(100%/16))*16);*/
 	height: 16px;
 	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
@@ -90,16 +91,18 @@ footer {
 }
 
 main {
-	width: 560px;
+	width: 576px;
+	flex: 0 0 auto;
 }
 
 aside {
-	width: 240px;
+	width: 224px;
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
 	border-image: url(assets/icons/border1.png) 33% repeat;
+	flex: 0 0 auto;
 }
 
 .title {
