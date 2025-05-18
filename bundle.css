@@ -12,6 +12,11 @@ body {
 	font-size:16px;
 }
 
+body.black {
+	background-image:none;
+	background-color:black;
+}
+
 @font-face{
 	font-family: ToshibaSat;
 	src: url(assets/fonts/PxPlus_ToshibaSat_8x16.ttf);
@@ -161,12 +166,22 @@ code.block {
 	background-color: rgba(59, 23, 29, 0.5);
 }
 
-a:link {
-	color: #f2b3d3
+a:link:not(.image-link) {
+	color:f2b3d3;
 }
 
-a:visited {
-	color: #d56aa0
+a:link:hover:not(.image-link) {
+	background-color:f2b3d3;
+	color:white;
+}
+
+a:visited:not(.image-link) {
+	color:f2b3d3;
+}
+
+a:visited:hover:not(.image-link) {
+	background-color:f2b3d3;
+	color:white;
 }
 
 nav {
@@ -187,7 +202,7 @@ img {
 .gallery {
 	display:flex;
 	flex-wrap: wrap;
-	flex-shrink: 1;
+	flex-shrink: 0;
 	justify-content: start;
 }
 
@@ -197,8 +212,8 @@ img {
 }
 
 .galleryitem {
-	width:33.3%;
-	margin:0;
+	width:256px;
+	margin:8px;
 }
 
 p {
