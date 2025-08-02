@@ -21,7 +21,7 @@ body.black {
 
 @font-face {
     font-family: 'ToshibaSat';
-    src: url('assets/fonts/pxplus_toshibasat_8x16.ttf') format('truetype');
+    src: url('assets/fonts/PxPlus_ToshibaSat_8x16.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
