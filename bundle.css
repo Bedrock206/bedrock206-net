@@ -1,15 +1,17 @@
 body {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         #461220,
         #69140e,
         #7d1128,
         #a64253
-    );
+    ); */
+	background-image: linear-gradient(#000000, #000000, #7d1128, #000000, #000000);
     background-size: cover;
     background-attachment: fixed;
     color: #FFFFFF;
-    font-family:ToshibaSat;
+    font-family:"ToshibaSat", "ToshibaSat", monospace;
 	font-size:16px;
+	text-box-edge: text;
 }
 
 body.black {
@@ -17,9 +19,18 @@ body.black {
 	background-color:black;
 }
 
-@font-face{
-	font-family: ToshibaSat;
-	src: url(assets/fonts/PxPlus_ToshibaSat_8x16.ttf);
+@font-face {
+    font-family: 'ToshibaSat';
+    src: url('assets/fonts/pxplus_toshibasat_8x16.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'DotGothic';
+	src: url('assets/fonts/DotGothic16-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face{
@@ -90,6 +101,14 @@ footer {
 	margin-bottom:16px;
 }
 
+.double {
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/border4.png) 33% repeat;
+}
+
 #flex {
 	display:flex;
 	max-width: 800px;
@@ -126,7 +145,7 @@ aside {
 }
 
 .navtitle {
-	font-size: 20px;
+	font-size: 16px;
 	border-bottom: 3px solid white;
 	border-style: double;
 	padding: 5px;
@@ -220,6 +239,9 @@ p {
 	margin:0;
 	padding:0;
 	line-height:16px;
+	flex:0 0 auto;
+	min-height:16px;
+	vertical-align:top;
 }
 
 p + p {
@@ -234,6 +256,7 @@ ul > li {
 	background-position: 0 0;
 	background-size: 16px 16px;
 	background-repeat: no-repeat;
+	min-height: 16px;
 }
 
 h3 {
@@ -263,6 +286,21 @@ h4 {
 	margin:0;
 	padding:0;
 }
+
 .post:target {
 	display:block;
+}
+
+span {
+	vertical-align:none;
+}
+
+.thinchild {
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-image: url(assets/icons/thinstack.png) 33% repeat;
+	margin:0;
+	padding:0;
 }
