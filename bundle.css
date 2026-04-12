@@ -98,7 +98,7 @@ footer {
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border3.png) 33% repeat;
+	border-image: url(assets/icons/border3.png) 16 repeat;
 	margin-bottom:16px;
 }
 
@@ -107,7 +107,7 @@ footer {
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border4.png) 33% repeat;
+	border-image: url(assets/icons/border4.png) 16 repeat;
 }
 
 #flex {
@@ -121,12 +121,12 @@ main {
 }
 
 aside {
-	width: 224px;
+	width: 192px;
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border1.png) 33% repeat;
+	border-image: url(assets/icons/border1.png) 16 repeat;
 	flex: 0 0 auto;
 }
 
@@ -135,7 +135,7 @@ aside {
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border2.png) 33% repeat;
+	border-image: url(assets/icons/border2.png) 16 repeat;
 	margin:0;
 	padding:0;
 	max-height:48px;
@@ -157,7 +157,7 @@ aside {
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border1.png) 33% repeat;
+	border-image: url(assets/icons/border1.png) 16 repeat;
 }
 
 .standalone {
@@ -165,7 +165,7 @@ aside {
 	border-top: 16px solid transparent;
 	border-right: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border1.png) 33% repeat;
+	border-image: url(assets/icons/border1.png) 16 repeat;
 }
 
 blockquote {
@@ -283,7 +283,7 @@ h4 {
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/border2.png) 33% repeat;
+	border-image: url(assets/icons/border2.png) 16 repeat;
 	margin:0;
 	padding:0;
 }
@@ -301,7 +301,7 @@ span {
 	border-right: 16px solid transparent;
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
-	border-image: url(assets/icons/thinstack.png) 33% repeat;
+	border-image: url(assets/icons/thinstack.png) 16 repeat;
 	margin:0;
 	padding:0;
 }
