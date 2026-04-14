@@ -1,17 +1,15 @@
 body {
-    /*background-image: linear-gradient(
+    background-image: linear-gradient(
         #461220,
         #69140e,
         #7d1128,
         #a64253
-    );*/
-	/*background-image: linear-gradient(#000000, #000000, #7d1128, #000000, #000000);*/
-	background-color: black;
+    );
     background-size: cover;
     background-attachment: fixed;
     color: #FFFFFF;
     font-family:"ToshibaSat", "ToshibaSat", monospace;
-	font-size:16px;
+	font-size:24px; /*16*/
 	text-box-edge: text;
 }
 
@@ -35,29 +33,29 @@ body.black {
 }
 
 @font-face{
-	/* Sorry for the less-than-helpful font name, I grabbed this from the default REXPaint fonts and turned it into a ttf myself */
+	/* sorry fur the less-than-helpful font name, i grabbed this from the default rexpaint fonts and turned it into a ttf myself */
 	font-family: SquareAssBitch;
 	src: url(assets/fonts/myfont.ttf);
 }
 
 img { 
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    image-rendering: optimizeSpeed;             /* stop smoothing, give me speed  */
+    image-rendering: -moz-crisp-edges;          /* firefox                        */
+    image-rendering: -o-crisp-edges;            /* opera                          */
+    image-rendering: -webkit-optimize-contrast; /* chrome (and eventually safari) */
+    image-rendering: pixelated;                 /* universal support since 2021   */
+    image-rendering: optimize-contrast;         /* css3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* ie8+                           */
 }
 
 div { 
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    image-rendering: optimizeSpeed;             /* stop smoothing, give me speed  */
+    image-rendering: -moz-crisp-edges;          /* firefox                        */
+    image-rendering: -o-crisp-edges;            /* opera                          */
+    image-rendering: -webkit-optimize-contrast; /* chrome (and eventually safari) */
+    image-rendering: pixelated;                 /* universal support since 2021   */
+    image-rendering: optimize-contrast;         /* css3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* ie8+                           */
 }
 
 pre {
@@ -66,7 +64,7 @@ pre {
 	white-space: break-spaces;
 	padding:0;
 	margin:0;
-	line-height:16px;
+	line-height:24px; /*16*/
 }
 
 hr {
@@ -74,14 +72,14 @@ hr {
 	margin: 0;
 	background-image: url(assets/icons/hr.png);
 	/*width: calc(round(down, calc(100%/16))*16);*/
-	height: 16px;
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	height: 24px;/*16*/
+	image-rendering: optimizeSpeed;             /* stop smoothing, give me speed  */
+    image-rendering: -moz-crisp-edges;          /* firefox                        */
+    image-rendering: -o-crisp-edges;            /* opera                          */
+    image-rendering: -webkit-optimize-contrast; /* chrome (and eventually safari) */
+    image-rendering: pixelated;                 /* universal support since 2021   */
+    image-rendering: optimize-contrast;         /* css3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* ie8+                           */
 }
 
 footer {
@@ -89,82 +87,75 @@ footer {
 }
 
 #container {
-	max-width: 800px;
+	max-width: 1200px;/*800*/
 	margin: 0 auto;
+	background-color:rgba(0,0,0,0.7);
 }
 
 .pagetitle {
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border3.png) 16 repeat;
-	margin-bottom:16px;
+	margin-bottom:24px;/*16*/
 }
 
 .double {
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border4.png) 16 repeat;
 }
 
 #flex {
 	display:flex;
-	max-width: 800px;
+	max-width: 1200px;/*800*/
 }
 
 main {
-	width: 576px;
+	width: 912px;/*608*/
 	flex: 0 0 auto;
 }
 
 aside {
-	width: 160px;
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	width: 240px;/*160*/
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border1.png) 16 repeat;
 	flex: 0 0 auto;
 }
 
 .title {
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border2.png) 16 repeat;
 	margin:0;
 	padding:0;
-	max-height:48px;
+	max-height:72px;/*48*/
 }
 
 .title:first-child {
 	margin-top: 0px;
 }
 
-.navtitle {
-	font-size: 16px;
-	border-bottom: 3px solid white;
-	border-style: double;
-	padding: 5px;
-	padding-left:25px;
-}
-
 .content {
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border1.png) 16 repeat;
 }
 
 .standalone {
-	border-left: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border1.png) 16 repeat;
 }
 
@@ -232,57 +223,59 @@ img {
 }
 
 .galleryitem {
-	width:256px;
-	margin:8px;
+	width:384px;/*265*/
+	margin:12px;/*8*/
 }
 
 p {
 	margin:0;
 	padding:0;
-	line-height:16px;
+	line-height:24px;/*16*/
 	flex:0 0 auto;
-	min-height:16px;
+	min-height:24px;/*16*/
 	vertical-align:top;
 }
 
 p + p {
-	margin-top:16px;
+	margin-top:24px;/*16*/
 }
 
 ul > li {
 	margin:0;
 	background-image: url(assets/icons/arrow1.png);
 	list-style-type: none;
-	padding-left: 16px;
+	padding-left: 24px;/*16*/
 	background-position: 0 0;
-	background-size: 16px 16px;
+	background-size: 24px 24px;/*16 16*/
 	background-repeat: no-repeat;
-	min-height: 16px;
+	min-height: 24px;/*16*/
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 24px;/*16*/
+	font-weight: normal;
 	margin: 0;
-	margin-bottom: 16px;
+	margin-bottom: 24px;/*16*/
 	padding: 0;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 24px;/*16*/
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 
 .galleryspacer > h4 {
-	margin-top: 16px;
+	margin-top: 24px;/*16*/
 }
 
 .post {
 	display: none;
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/border2.png) 16 repeat;
 	margin:0;
 	padding:0;
@@ -297,10 +290,10 @@ span {
 }
 
 .thinchild {
-	border-left: 16px solid transparent;
-	border-right: 16px solid transparent;
-	border-top: 16px solid transparent;
-	border-bottom: 16px solid transparent;
+	border-left: 24px solid transparent;/*16*/
+	border-right: 24px solid transparent;/*16*/
+	border-top: 24px solid transparent;/*16*/
+	border-bottom: 24px solid transparent;/*16*/
 	border-image: url(assets/icons/thinstack.png) 16 repeat;
 	margin:0;
 	padding:0;
